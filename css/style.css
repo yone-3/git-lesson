@@ -84,3 +84,11 @@ textarea {
 }
 
 /* お名前とメールアドレスの入力欄に太さ1pxの実線、黒色のボーダーを引く */
+
+input[type=text],
+input[type=email],
+textarea {
+    border: 1px solid var(--portfolio-black);
+    background: var(--portfolio-white);
+
+}
