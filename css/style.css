@@ -3,4 +3,6 @@
 body {
     background: pink;
     font-size: 15px;
+    font-weight: bold;
+    color: red;
 }
