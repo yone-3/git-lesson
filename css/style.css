@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+body {
+    /* background: ; */
+    font-size: 15px;
+    /* font-weight: bold; */
+    color: var(--portfolio-black);
+}
+
+/* カスタムプロパティ(CSS変数) */
+:root {
+    /* --カスタムプロパティ名:値 */
+    --portfolio-black: #000000;
+    --portfolio-green: #296A65;
+    --portfolio-light-green: #2FAC9E;
+    --portfolio-white: #FFFFFF;
+    --portfolio-gray: #EEEEEE;
+
+
+    --fz-12: 12px;
+    --fz-14: 14px;
+    --fz-16: 16px;
+    --fz-18: 18px;
+    --fz-24: 24px;
+    --fz-32: 32px;
+    --fz-48: 48px;
+    --fz-64: 64px;
+}
+
+body {
+    background: var(--portfolio-light-green);
+
+}
+
+.li-3 {
+    color: red;
+
+}
+
+li:hover {
+    text-decoration: underline solid 1px red;
+}
+
+/* 何番目系疑似クラス */
+
+li:nth-child(2) {
+    color: yellow;
+}
+
+li:nth-child(odd) {
+    font-weight: normal;
+}
+
+li:nth-child(even) {
+    font-size: 18px;
+}
+
+.sec01>p:first-of-type {
+    color: green;
+    /* text-decoration: underline solid 1px black; */
+}
+
+.sec01>p:nth-child(2) {
+    text-decoration: underline solid 1px white;
+}
+
+.sec01 ul li:nth-of-type(2) {
+    font-weight: bold;
+}
+
+.sec01 ul li:nth-child(5) {
+    font-size: 24px;
+    color: red;
+}
+
+/* フォームのスタイルをリセット */
+input,
+textarea {
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    appearance: none;
+}
+
+/* お名前とメールアドレスの入力欄に太さ1pxの実線、黒色のボーダーを引く */
