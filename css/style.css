@@ -92,3 +92,9 @@ textarea {
     background: var(--portfolio-white);
 
 }
+
+/* フォーカスされている(選択されている)入力欄を強調する */
+input:focus,
+textarea:focus {
+    outline: 3px solid var(--portfolio-black);
+}
