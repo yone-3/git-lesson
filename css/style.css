@@ -98,3 +98,7 @@ input:focus,
 textarea:focus {
     outline: 3px solid var(--portfolio-black);
 }
+
+input:required {
+    background: pink;
+}

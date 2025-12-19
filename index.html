@@ -48,15 +48,15 @@
     <section class="sec02">
         <form action="" method="post">
             <p>お名前
-                <input type="text" name="user_name" id="user_name">
+                <input type="text" name="user_name" id="user_name" required>
             </p>
             <p>メールアドレス
                 <input type="email" name="user_email" id="user_email">
             </p>
             <p>性別
-                <input type="radio" name="gender" value="male" id="gender01">男性
-                <input type="radio" name="gender" value="female" id="gender02">女性
-                <input type="radio" name="gender" value="other" id="gender03">その他
+                <label for="gender01"><input type="radio" name="gender" value="1" id="gender01">男性</label>
+                <label for="gender02"><input type="radio" name="gender" value="2" id="gender02">女性</label>
+                <label for="gender03"><input type="radio" name="gender" value="3" id="gender03">その他</label>
             </p>
             <p>お問い合わせ内容
                 <textarea name="message" id="message"></textarea>
